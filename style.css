@@ -1,0 +1,156 @@
+.wrap-input-9 .input {
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	background-color: #f5f6fd;
+	border: 1px solid #ccc;
+	padding: 7px 14px 9px;
+	transition: 0.4s;
+}
+
+.wrap-input-9 .input:focus {
+	outline: none;
+}
+
+.wrap-input-9 {
+	width: 80%;
+	margin: 40px 3%;
+	position: relative;
+	margin-left: 10vw;
+}
+
+.wrap-input-9 .input ~ .focus-border:before,
+.wrap-input-9 .input ~ .focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #6c5dd3;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.wrap-input-9 .input ~ .focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.6s;
+}
+
+.wrap-input-9 .input ~ .focus-border i:before,
+.wrap-input-9 .input ~ .focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #6c5dd3;
+	transition: 0.2s;
+}
+
+.wrap-input-9 .input ~ .focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.4s;
+}
+
+.wrap-input-9 .input:focus ~ .focus-border:before,
+.wrap-input-9 .input:focus ~ .focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.6s;
+}
+
+.wrap-input-9 .input:focus ~ .focus-border:after {
+	transition-delay: 0.2s;
+}
+
+.wrap-input-9 .input:focus ~ .focus-border i:before,
+.wrap-input-9 .input:focus ~ .focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+
+.wrap-input-9 .input:focus ~ .focus-border i:after {
+	transition-delay: 0.4s;
+}
+
+#btn {
+	background-color: #6c5dd3;
+	color: #fff;
+	margin-left: 45vw;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+	background-color: #5247b3;
+}
+
+h1 {
+	text-align: center;
+	color: #6c5dd3;
+}
+
+#list-group {
+	width: 75vw;
+	height: 40vh;
+	padding-top: 9px;
+	overflow-y: auto;
+	margin: auto;
+	border: #6c5dd3 3px solid;
+}
+
+.each-list {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #6c5dd3;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+
+.deleteButton {
+	background-color: #6c5dd3;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+	#btn {
+		align-self: center;
+		margin-bottom: 30px;
+		margin-left: 41vw;
+	}
+	.deleteButton {
+		margin-left: 20px;
+	}
+	#list-group {
+		width: 80vw;
+		height: 40vh;
+	}
+	li {
+		padding: 5px;
+		margin: 5px;
+	}
+}
+
+ol li {
+	list-style: decimal;
+}
